@@ -4,9 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        System.out.println("Hello new message");
+        MyMessage m = new MyMessage();
+        m.setMessage( "a hello message from the class" );
+
+        System.out.println("new message : "+ m.getMessage());
 
         Value v = new Value(22);
-        System.out.println("Value added : " + v);
+        System.out.println("Value added : " + v.getaValue());
+
     }
 }
